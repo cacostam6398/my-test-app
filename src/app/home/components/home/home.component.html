@@ -1,0 +1,23 @@
+<div class="row mt-4 mb-3">
+    <div class="col-12">
+        <app-bank-amount></app-bank-amount>
+    </div>
+</div>
+
+<div class="jumbotron">
+    
+    <button type="button" class="btn btn-success btn-lg mr-3" (click)="AddCreditModal()">Nuevo Credito</button>    
+    <button type="button" class="btn btn-primary btn-lg" routerLink="/users">Usuarios</button>   
+    
+    <hr class="my-4">
+    
+    <mat-tab-group mat-align-tabs="center">
+      <mat-tab label="Creditos aprovados"> <app-approved-credits></app-approved-credits> </mat-tab>
+      <mat-tab label="Creditos rechazados"> <app-rejected-credits></app-rejected-credits> </mat-tab>
+      <mat-tab label="Creditos Pendientes"> <app-pending-credits></app-pending-credits> </mat-tab>
+     
+     
+    </mat-tab-group>
+ 
+  </div>
+
